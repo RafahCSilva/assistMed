@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AssistMed</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.7.min.css">
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body>
+<div class="container fill">
+
+  <div class="row fill">
+    <div class="col-md-4">
+
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 col-xs-8 col-xs-offset-2 h3 text-center">
+          <img class="img-responsive" src="logo_img.png" alt="Logo">
+          <img class="img-responsive" src="assistmed_logo.png" alt="Logo">
+          <!--<h1>AssistMed</h1>-->
+        </div>
+      </div>
+
+      <!--<button id="showModal">showModal</button>-->
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 col-xs-8 col-xs-offset-2">
+          <ul id="devs">
+            <li><h4>Desenvolvido por:</h4></li>
+            <ul class="list-group">
+              <li>Alexandre</li>
+              <li>André Peric Tavares</li>
+              <li>Giulio Denardi</li>
+              <li>Matheus Connolyn</li>
+              <li>Rafael Cardoso da Silva</li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+
+      <!--<div class="btn-group" role="group" aria-label="option">-->
+        <!--<button type="button" class="btn btn-default active" onclick="setActiveButton(this)">On</button>-->
+        <!--<button type="button" class="btn btn-default" onclick="setActiveButton(this)">Off</button>-->
+      <!--</div>-->
+
+    </div>
+
+    <div class="col-md-7 fill">
+      <div class="fill" id="chat_div">
+
+        <ul id="mensagens">
+          <!--<li class="dele clearfix"><div>DELE</div</li>-->
+          <!--<li class="minha clearfix"><div>MEU</div></li>-->
+        </ul>
+
+        <div id="inputs">
+          <div class="input-group">
+            <input type="text" id="texto" class="form-control input-lg" placeholder="Escreva sua mensagem...">
+            <span class="input-group-btn">
+              <button class="btn btn-primary btn-lg" type="button" id="enviarMsg">Enviar</button>
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Confirme o Número do</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+            Olá, analisamos seu cartão e identificamos estes dados:<br>
+            Produto: <strong id="prod"></strong><br>
+            Código: <strong id="cod"></strong><br>
+
+            Estes números estão corretos?
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+</div>
+
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-3.3.7.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
+</body>
+</html>
