@@ -2,7 +2,7 @@
 \#BLUEHACK
 
 **Desenvolvido por:**
-- Alexandre
+- Alexandre Barrionuevo
 - André Peric Tavares
 - Giulio Denardi
 - Matheus Connolyn
